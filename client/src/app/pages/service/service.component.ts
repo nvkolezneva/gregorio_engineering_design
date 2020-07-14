@@ -10,7 +10,7 @@ import {CartService} from "../../services/cart.service";
 export class ServiceComponent implements OnInit {
   products: Product[] = [];
   addToCart(product) {
-    window.alert('Your product has been added to the cart!');
+    window.alert('Товар в корзине! Вау!');
     this.cartService.addToCart(product);
   }
   constructor(private dataBaseService: DataBaseService, private cartService: CartService) { }
